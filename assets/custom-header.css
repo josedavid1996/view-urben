@@ -1,0 +1,27 @@
+.header-custom {
+  padding: 15px 20px !important;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0;
+}
+
+.logo-span {
+  color: #f45050;
+}
+.header__icon--search {
+  color: #f45050;
+}
+.icon-cart-empty {
+  color: #f45050;
+}
+
+header-drawer {
+  margin-left: 1rem !important;
+}
+
+header-drawer details summary span {
+  color: #f45050;
+}
