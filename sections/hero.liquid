@@ -1,49 +1,69 @@
-<div class="hero__card"></div>
+<link rel="stylesheet" href="{{ 'hero.css' | asset_url }}" media="print" onload="this.media='all'">
+
+
+<div class="hero__card">
+  <div>
+    {% for block in section.blocks %}
+            <div >
+
+                <img src="{{ block.settings.image_card | img_url: '750x' }}">
+                <h4>{{ block.settings.title_card }}</h4>
+                <div class="text-content">
+                    {{ block.settings.content_card }}
+                </div>
+
+            </div>
+            {% endfor %}
+  <div>
+  </div>
+
+</div>
 
 {% schema %}
 {
-  "name": "Hero Seccion",
-  "tag": "section",
-  "class": "hero__container",
-  "limit": 1,
-  "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Hero text"
-    }
-  ],
-  "max_blocks": 5,
-  "blocks": [
-      {
-        "name": "Hero",
-        "type": "hero",
-        "settings": [
-          {
-            "type": "text",
-            "id": "image",
-            "label": "texto del hero"
-          }
-        ]
-      }
-  ],
-  "presets": [
-    {
-      "name": "Hero Contenido",
-      "settings": {
-        "title": "Hero"
-      },
-      "blocks": [
+    "name": "Tarjetas del home",
+    "max_blocks": 12,
+    "class": "hero__container",
+    "settings": [
         {
-          "type": "hero"
+        "type": "text",
+        "id": "section_title",
+        "label": "Titulo de la sección",
+        "default": "Información importante"
         }
-      ]
+    ],
+    "blocks": [
+        {
+        "type" : "text_block",
+        "name" : "Tarjetas",
+        "settings" : [
+            {
+                "type":"image_picker",
+                "id": "image_card",
+                "label": "Imagen de la tarjeta"
+            },
+            {
+                "type":"text",
+                "id": "title_card",
+                "label": "Titulo de la tarjeta"
+            },
+            {
+                "type":"richtext",
+                "id": "content_card",
+                "label": "Texto de la tarjeta"
+            }
+        ]}
+    ],	
+    "presets": [
+        {
+        "name": "Tarjetas de contenido",
+        "category": "Custom content",
+        "blocks": [
+            {
+                "type": "text_block"
+            }
+        ]
     }
-  ],
-  "locales": {
-    "en": {
-      "title": "Hero Seccion"
-    }
-  }
+  ]
 }
 {% endschema %}
