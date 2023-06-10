@@ -3,18 +3,20 @@
     "6ff33edf-90de-484d-bf3d-b9f3ade47ccf": {
       "type": "hero",
       "blocks": {
-        "template--19315481805093__6ff33edf-90de-484d-bf3d-b9f3ade47ccf-168642844747ac8b42-0": {
-          "type": "hero",
+        "c23913b7-cd8e-4ba2-83c0-07af27933af8": {
+          "type": "text_block",
           "settings": {
-            "image": ""
+            "image_card": "shopify:\/\/shop_images\/vintage-shopping.jpg",
+            "title_card": "Super Promocion",
+            "content_card": "<p><strong>Lorem Ipsum<\/strong>es simplemente el texto de relleno de las imprentas y archivos de texto<\/p>"
           }
         }
       },
       "block_order": [
-        "template--19315481805093__6ff33edf-90de-484d-bf3d-b9f3ade47ccf-168642844747ac8b42-0"
+        "c23913b7-cd8e-4ba2-83c0-07af27933af8"
       ],
       "settings": {
-        "title": "Hero"
+        "section_title": "Información importante"
       }
     },
     "image_banner": {
