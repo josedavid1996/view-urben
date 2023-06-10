@@ -1,5 +1,63 @@
-.hero__container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero__card {
   width: 100%;
+  position: relative;
   height: 60vh;
-  background-color: red;
+
+  overflow: hidden;
+  z-index: 20;
+}
+
+.img-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  object-position: center;
+  height: 100%;
+  z-index: 10;
+}
+.hero__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color oscuro con opacidad */
+  z-index: 20;
+}
+.text-content {
+  position: relative;
+  z-index: 30;
+}
+
+.text-content h4 {
+  color: #f45050;
+  font-size: 40px;
+  font-weight: 700;
+}
+.text-content p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.hero__card__container {
+  width: 100%;
+  height: 100%;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }

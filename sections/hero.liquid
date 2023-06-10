@@ -2,19 +2,20 @@
 
 
 <div class="hero__card">
-  <div>
-    {% for block in section.blocks %}
-            <div >
 
-                <img src="{{ block.settings.image_card | img_url: '750x' }}">
+    {% for block in section.blocks %}
+            <div class="hero__card__container">
+
+              <div class="text-content">
                 <h4>{{ block.settings.title_card }}</h4>
-                <div class="text-content">
-                    {{ block.settings.content_card }}
-                </div>
+                <p>{{ block.settings.content_card }}</p>
+                
+              </div>
+              <img src="{{ block.settings.image_card | img_url: '750x' }}" class="img-card">
 
             </div>
             {% endfor %}
-  <div>
+
   </div>
 
 </div>
