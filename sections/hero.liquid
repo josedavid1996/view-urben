@@ -1,53 +1,33 @@
+<div class="hero__card"></div>
+
 {% schema %}
+
 {
-    "name": "Tarjetas del home",
-    "max_blocks": 12,
-    "settings": [
-        {
-        "type": "text",
-        "id": "section_title",
-        "label": "Titulo de la sección",
-        "default": "Información importante"
-        }
-    ],
-    "blocks": [
-        {
-        "type" : "text_block",
-        "name" : "Tarjetas",
-        "settings" : [
-            {
-                "type":"image_picker",
-                "id": "image_card",
-                "label": "Imagen de la tarjeta"
-            },
-            {
-                "type":"text",
-                "id": "title_card",
-                "label": "Titulo de la tarjeta"
-            },
-            {
-                "type":"richtext",
-                "id": "content_card",
-                "label": "Texto de la tarjeta"
-            }
-        ]}
-    ],	
-    "presets": [
-        {
-        "name": "Tarjetas de contenido",
-        "category": "Custom content",
-        "blocks": [
-            {
-                "type": "text_block"
-            },
-            {
-                "type": "text_block"
-            },
-            {
-                "type": "text_block"
-            }
-        ]
+"name":"Hero",
+"tag":"section",
+"class":"hero__container",
+"limit":1,
+"settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header"
     }
-  ]
+  ],
+    "blocks": [
+      {
+        "name": "Hero__item",
+        "type": "hero__item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ]
 }
-{% endschema %}
+
+
+{% endschema%}
