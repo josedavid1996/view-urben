@@ -1,5 +1,22 @@
 {
   "sections": {
+    "6ff33edf-90de-484d-bf3d-b9f3ade47ccf": {
+      "type": "hero",
+      "blocks": {
+        "template--19315481805093__6ff33edf-90de-484d-bf3d-b9f3ade47ccf-168642844747ac8b42-0": {
+          "type": "hero",
+          "settings": {
+            "image": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19315481805093__6ff33edf-90de-484d-bf3d-b9f3ade47ccf-168642844747ac8b42-0"
+      ],
+      "settings": {
+        "title": "Hero"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "disabled": true,
@@ -112,6 +129,7 @@
     }
   },
   "order": [
+    "6ff33edf-90de-484d-bf3d-b9f3ade47ccf",
     "image_banner",
     "featured_collection",
     "10b8ff5f-5a68-485a-a980-477b0d4a057a"
