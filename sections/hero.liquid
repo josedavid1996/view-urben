@@ -2,47 +2,48 @@
 
 {% schema %}
 {
-    "name": "Hero del home",
-    "max_blocks": 12,
-    "settings": [
-        {
-        "type": "text",
-        "id": "section_title",
-        "label": "Titulo de la sección",
-        "default": "Información importante"
-        }
-    ],
-    "blocks": [
-        {
-        "type" : "text_block",
-        "name" : "Tarjetas",
-        "settings" : [
-            {
-                "type":"image_picker",
-                "id": "image_card",
-                "label": "Imagen de la tarjeta"
-            },
-            {
-                "type":"text",
-                "id": "title_card",
-                "label": "Titulo de la tarjeta"
-            },
-     
-        ]}
-    ],	
-    "presets": [
-        {
-        "name": "Hero de contenido",
-        "category": "Custom content",
-        "blocks": [
-            {
-                "type": "text_block"
-            },
-            {
-                "type": "text_block"
-            }
-        ]
+  "name": "Hero Seccion",
+  "tag": "section",
+  "class": "hero__container",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Hero text"
     }
-  ]
+  ],
+  "max_blocks": 5,
+  "blocks": [
+      {
+        "name": "Hero",
+        "type": "hero",
+        "settings": [
+          {
+            "type": "text",
+            "id": "image",
+            "label": "texto del hero"
+          }
+        ]
+      }
+  ],
+  "presets": [
+    {
+      "name": "Hero Contenido",
+      "settings": {
+        "title": "Hero"
+      },
+      "blocks": [
+        {
+          "type": "hero"
+        }
+      ]
+    }
+  ],
+  "locales": {
+    "en": {
+      "title": "Hero Seccion"
+    }
+  }
 }
 {% endschema %}
