@@ -132,7 +132,19 @@
     },
     "46c73855-b933-422d-8494-3d9b2a494457": {
       "type": "seccion-product",
-      "disabled": true,
+      "blocks": {
+        "0041d64c-9725-42ae-b84c-19d076ac3f35": {
+          "type": "product_block",
+          "settings": {
+            "image_card": "shopify:\/\/shop_images\/blue-sofa.jpg",
+            "title_card": "Sofa Azul",
+            "content_card": "<p>El sofá azul: estilo y confort en un solo mueble.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0041d64c-9725-42ae-b84c-19d076ac3f35"
+      ],
       "settings": {
         "section_producto": "Información de productos"
       }
