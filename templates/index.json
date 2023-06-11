@@ -132,6 +132,7 @@
     },
     "46c73855-b933-422d-8494-3d9b2a494457": {
       "type": "seccion-product",
+      "disabled": true,
       "settings": {
         "section_producto": "Información de productos"
       }
