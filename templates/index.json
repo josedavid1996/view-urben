@@ -159,12 +159,42 @@
             "content_card_product": "<p>El sofá gris: estilo y confort en un solo mueble.<\/p>",
             "card_product_money": "$350.000"
           }
+        },
+        "ce050d5b-caab-4911-b96d-6ca98b2085c6": {
+          "type": "product_block",
+          "settings": {
+            "image_card": "shopify:\/\/shop_images\/861.jpg",
+            "title_card_product": "Silla de Sala",
+            "content_card_product": "<p>Silla de sala: estilo y confort en un solo mueble.<\/p>",
+            "card_product_money": "$200.000"
+          }
+        },
+        "1865e62b-8d64-4415-8f95-9bb794e4856d": {
+          "type": "product_block",
+          "settings": {
+            "image_card": "shopify:\/\/shop_images\/pexels-vecislavas-popa-1571463.jpg",
+            "title_card_product": "Juego de Sala",
+            "content_card_product": "<p>Juego de sala: estilo y confort en un solo mueble.<\/p>",
+            "card_product_money": "$400.000"
+          }
+        },
+        "99027684-6e0d-40d7-9c29-08edbccb5fab": {
+          "type": "product_block",
+          "settings": {
+            "image_card": "shopify:\/\/shop_images\/447.jpg",
+            "title_card_product": "Juego de Cuarto",
+            "content_card_product": "<p>Juego de cuarto: estilo y confort en un solo mueble.<\/p>",
+            "card_product_money": "$450.000"
+          }
         }
       },
       "block_order": [
         "0041d64c-9725-42ae-b84c-19d076ac3f35",
         "9848ea04-e15e-4ac9-af49-cd8899a344b0",
-        "5e4329cf-c86a-4eee-8db3-57533d7068b8"
+        "5e4329cf-c86a-4eee-8db3-57533d7068b8",
+        "ce050d5b-caab-4911-b96d-6ca98b2085c6",
+        "1865e62b-8d64-4415-8f95-9bb794e4856d",
+        "99027684-6e0d-40d7-9c29-08edbccb5fab"
       ],
       "settings": {
         "section_producto": "Información de productos"
