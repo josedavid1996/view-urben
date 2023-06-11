@@ -7,7 +7,12 @@
   {% for block in section.blocks %}
             <div class="product__card">
               <img src="{{ block.settings.image_card | img_url: '750x' }}" class="img-card-product">
-              <h3>{{block.settings.title_card_product}}</h3>
+              <div class="text-group">
+                <h3>{{block.settings.title_card_product}}</h3>
+                <p>{{block.settings.content_card_product}}</p>
+                <span>{{block.settings.card_product_money}}</span>
+                <a>Agregar al carrito</a>
+              </div>
 
             </div>
             {% endfor %}
