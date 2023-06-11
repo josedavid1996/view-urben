@@ -138,7 +138,8 @@
           "settings": {
             "image_card": "shopify:\/\/shop_images\/blue-sofa.jpg",
             "title_card_product": "Sofa Azul",
-            "content_card_product": "<p>El sofá azul: estilo y confort en un solo mueble.<\/p>"
+            "content_card_product": "<p>El sofá azul: estilo y confort en un solo mueble.<\/p>",
+            "card_product_money": "$300.000"
           }
         },
         "9848ea04-e15e-4ac9-af49-cd8899a344b0": {
@@ -146,7 +147,8 @@
           "settings": {
             "image_card": "shopify:\/\/shop_images\/98.jpg",
             "title_card_product": "Sofa Doble",
-            "content_card_product": "<p>El sofá doble: estilo y confort en un solo mueble.<\/p>"
+            "content_card_product": "<p>El sofá doble: estilo y confort en un solo mueble.<\/p>",
+            "card_product_money": "$250.000"
           }
         },
         "5e4329cf-c86a-4eee-8db3-57533d7068b8": {
@@ -154,7 +156,8 @@
           "settings": {
             "image_card": "shopify:\/\/shop_images\/gray-sofa-white-living-room.jpg",
             "title_card_product": "Sofa Gris",
-            "content_card_product": "<p>El sofá gris: estilo y confort en un solo mueble.<\/p>"
+            "content_card_product": "<p>El sofá gris: estilo y confort en un solo mueble.<\/p>",
+            "card_product_money": "$350.000"
           }
         }
       },
