@@ -129,12 +129,19 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "46c73855-b933-422d-8494-3d9b2a494457": {
+      "type": "seccion-product",
+      "settings": {
+        "section_producto": "Información de productos"
+      }
     }
   },
   "order": [
     "6ff33edf-90de-484d-bf3d-b9f3ade47ccf",
     "image_banner",
     "featured_collection",
-    "10b8ff5f-5a68-485a-a980-477b0d4a057a"
+    "10b8ff5f-5a68-485a-a980-477b0d4a057a",
+    "46c73855-b933-422d-8494-3d9b2a494457"
   ]
 }
