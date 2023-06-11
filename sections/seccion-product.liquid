@@ -1,4 +1,6 @@
-<div>Hola</div>
+<div>{% for product in collection.products %} 
+	{{ product.title }} 
+{% endfor %}</div>
 
 
 {% schema %}
