@@ -1,10 +1,22 @@
-<p>Tienes {{ collection.all_products_count }} productos en tu tienda.</p>
+<link rel="stylesheet" href="{{ 'cards-products.css' | asset_url }}" media="print" onload="this.media='all'">
+
+
+
+<div class="cards-product-container">
+
+  {% for block in section.blocks %}
+            <div class="product__card">
+              <img src="{{ block.settings.image_card | img_url: '750x' }}" class="img-card-product">
+
+            </div>
+            {% endfor %}
+</div>
 
 
 {% schema %}
 {
     "name": "Tarjetas de productos",
-    "class": "hero__container",
+    "class": "product__container",
     "limit":1,
     "max_blocks": 12,
     "settings": [
