@@ -1,6 +1,4 @@
-<div>{% for product in collection.products %} 
-	{{ product.title }} 
-{% endfor %}</div>
+<p>Tienes {{ collection.all_products_count }} productos en tu tienda.</p>
 
 
 {% schema %}
@@ -8,6 +6,7 @@
     "name": "Tarjetas de productos",
     "class": "hero__container",
     "limit":1,
+    "max_blocks": 12,
     "settings": [
         {
         "type": "text",
@@ -16,11 +15,38 @@
         "default": "Información de productos"
         }
     ],
+       "blocks": [
+        {
+        "type" : "product_block",
+        "name" : "Tarjetas",
+        "settings" : [
+            {
+                "type":"image_picker",
+                "id": "image_card",
+                "label": "Imagen de la tarjeta"
+            },
+            {
+                "type":"text",
+                "id": "title_card",
+                "label": "Titulo de la tarjeta"
+            },
+            {
+                "type":"richtext",
+                "id": "content_card",
+                "label": "Texto de la tarjeta"
+            }
+        ]}
+    ],	
 
     "presets": [
         {
         "name": "Tarjetas de productos",
-        "category": "Custom content"
+        "category": "Custom content",
+        "blocks": [
+            {
+                "type": "product_block"
+            }
+        ]
     }
   ]
 }
