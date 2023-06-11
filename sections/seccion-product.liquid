@@ -7,7 +7,7 @@
   {% for block in section.blocks %}
             <div class="product__card">
               <img src="{{ block.settings.image_card | img_url: '750x' }}" class="img-card-product">
-              <h3>{{}}</h3>
+              <h3>{{block.settings.title_card_product}}</h3>
 
             </div>
             {% endfor %}
@@ -47,6 +47,11 @@
                 "type":"richtext",
                 "id": "content_card_product",
                 "label": "Texto de la tarjeta"
+            }
+            {
+                "type":"text-money",
+                "id": "card_product_money",
+                "label": "Valor de producto"
             }
         ]}
     ],	
