@@ -1,0 +1,58 @@
+
+
+
+{% schema %}
+{
+    "name": "Tarjetas de productos",
+    "max_blocks": 12,
+    "class": "hero__container",
+    "limit":1,
+    "settings": [
+        {
+        "type": "text",
+        "id": "section_producto",
+        "label": "Titulo de la sección",
+        "default": "Información de productos"
+        }
+    ],
+    "blocks": [
+        {
+        "type" : "product_block",
+        "name" : "Productos",
+        "settings" : [
+            {
+                "type":"image_picker",
+                "id": "image_card_product",
+                "label": "Imagen de la tarjeta"
+            },
+            {
+                "type":"text",
+                "id": "title_card_product",
+                "label": "Titulo de la tarjeta"
+            },
+            {
+                "type":"richtext",
+                "id": "content_card_product",
+                "label": "Texto de la tarjeta"
+            }
+        ]}
+    ],	
+    "presets": [
+        {
+        "name": "Tarjetas de cproductos",
+        "category": "Custom content",
+        "blocks": [
+            {
+                "type": "product_block"
+            },
+            {
+                "type": "product_block"
+            },
+            {
+                "type": "product_block"
+            }
+        ]
+    }
+  ]
+}
+{% endschema %}
